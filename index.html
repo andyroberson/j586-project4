@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fisherman's Wharf</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+  <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+  <script src="instagram.js" type="text/javascript"></script>
+  <script src="tweetLinkIt-master/tweetLinkIt.js"></script> <!--fix this later though -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://pixelcog.github.io/parallax.js/js/parallax.min.js"></script>
+  <script src="scroll-js.js"></script>
+
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=">   //returns google maps js info // take out key??? can go back and add key for site later
+      /*api key ^^*/
+    </script>
+    <script type="text/javascript" src="google-maps.js">
+    </script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12 navbar-fixed-top header">
+        <div class="row">
+           <div class="col-md-5 hidden-sm hidden-xs links left"><a href="#about">fisherman's wharf</a>  <a href="#map">map</a></div>
+           <div class="col-md-2 col-sm-2 hidden-sm hidden-xs logo"><a href="#top"><img src="images/fishermans-wharf.png"></a></div>
+           <div class="col-md-5 hidden-sm hidden-xs links right"><a href="#social">social</a>  <a href="http://www.fishermanswharf.org/">plan your trip</a></div>
+           <div class="hidden-xl hidden-lg hidden-md hidden-xs col-sm-10 tiny-header">Fisherman's Wharf</div>
+           <div class="hidden-xl hidden-lg hidden-md hidden-sm col-sm-10 very-tiny-header">Fisherman's Wharf</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <a name="top"></a>
+      <div class="col-md-12 hidden-sm hidden-xs front-image" data-parallax="scroll" data-image-src="http://www.memoirstream.com/Resources/wharf213sm.jpg">
+      </div>
+      <div class="hidden-lg hidden-xl col-sm-12 hidden-xs front-image-sm" data-parallax="scroll" data-image-src="http://www.memoirstream.com/Resources/wharf213sm.jpg">
+      </div>
+      <div class="hidden-lg hidden-xl hidden-sm col-xs-12 front-image-xs" data-parallax="scroll" data-image-src="http://www.memoirstream.com/Resources/wharf213sm.jpg">
+      </div>
+    </div>
+
+    <div class="col-md-12 about">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                 <div class="row">
+                   <a name="about"></a>
+                   <div class="col-md-8 fisher-text">
+                      <h1>Fisherman's Wharf</h1>
+                      Fisherman's Wharf is one of the top attractions in San Francisco. Located right on the bay, there are plenty of things to do
+                       whether you're a tourist or a local! Scroll down for a map with 10 popular attractions in the area and see what everyone else
+                      is saying about them!
+                   </div>
+                   <div class="col-md-4">
+                     <div class="col-md-12">
+                       <div id="weather"></div>
+                     </div>
+                   </div>
+                 </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <a name="map"></a>
+      <div class="col-md-12 map">
+        <div id="map-canvas"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <a name="social"></a>
+      <div class="col-md-12 social">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="twitter-title"><a target="_blank" href="http://www.twitter.com">
+                  <img src="https://g.twimg.com/Twitter_logo_blue.png" width="50px" height="41px"></a>
+                </div>
+                <div class="social-twitter">
+                  <iframe src="http://andrearoberson.com/apps/twitter/">
+                  </iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="insta-title"><a target="_blank" href="http://www.instagram.com">
+                  <img src="http://www.whosjali.com/insta_icon.png" width="50px" height="50px"></a>
+                </div>
+                <div class="social-insta"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 footer">
+        Sources: map icons by flaticon.com
+      </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/bootstrap.min.js"></script>
+    <script src="monkeecreate-jquery.simpleWeather-ed11490/jquery.simpleWeather.min.js"></script>
+    <script>
+  	$(document).ready(function() {
+    $.simpleWeather({
+      location: 'Fishermans Wharf, CA',
+      woeid: '',
+      unit: 'f',
+      success: function(weather) {
+        html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+        //html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+        html += '<li class="currently">'+weather.currently+'</li></ul>';
+        html += '<ul><li class="temps"><span class="left"> LOW: '+weather.low+'</span><span class="right">HIGH: '+weather.high+'</span></li></ul>';
+
+        $("#weather").html(html);
+      },
+      error: function(error) {
+        $("#weather").html('<p>'+error+'</p>');
+      }
+    });
+  });
+  	</script>
+    <script src="tweetLinkIt.js"></script>
+    <script>
+       function pageComplete(){
+           $('.tweet').tweetLinkify();
+       }
+    </script>
+
+  </body>
+</html>

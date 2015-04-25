@@ -1,0 +1,320 @@
+
+  .border
+  {
+    border: 1px solid #000;
+  }
+
+  h1 {
+    color: #96b2c5;
+    letter-spacing: 1px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  a:link, a:active, a:visited {
+    color: #376a81;
+    margin: 2em;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #524236;
+  }
+
+  .header {
+    min-height:60px;
+    max-height: 136px;
+    background: #A7DBD8;
+    overflow: none;
+    opacity: .9;
+    border-bottom: .5em solid #000;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .tiny-header {
+    padding-top: .7em;
+    padding-left: 2em;
+    font-size: 3em;
+    color: #000;
+  }
+
+  .very-tiny-header {
+    padding-top: .7em;
+    text-align: center;
+    font-size: 2em;
+    color: #000;
+  }
+
+  .to-bump-down {
+    height: 100px;
+  }
+
+  .front-image {
+    min-height: 600px;
+    height: 700px;
+    /*background-image: url('http://www.memoirstream.com/Resources/wharf213sm.jpg');
+    background-size: cover;
+    margin-top: 100px;*/
+  }
+
+  .front-image-sm {
+    height: 400px;
+  }
+
+  .front-image-xs {
+    height: 220px;
+  }
+
+  .logo {
+    margin-top: -6px;
+    text-align: center;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+  }
+  /*hehe make it rotate like a ship wheel*/
+
+  .logo img {
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+
+  .logo img:hover {
+    -webkit-transform: rotate(900deg);
+    -ms-transform: rotate(900deg);
+    -webkit-transform: rotate(900deg);
+    transform: rotate(900deg);
+  }
+
+  .about {
+    background: #524236;
+    color: #fff;
+    border-top: .5em solid #376a81;
+    border-bottom: .5em solid #f78b61;
+    padding-top: 3.5em;
+    padding-bottom: 3.9em;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-family: arial;
+    font-weight: normal;
+  }
+
+  .fisher-text {
+    padding-left: 1.5em;
+  }
+
+  .links {
+    margin-top:  1.5em;
+    font-size: 2em;
+    text-align:center;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+
+  #map-canvas {
+    height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+
+   .social {
+    min-height: 400px;
+    background: #524236;
+    border-top: .7em solid #376a81;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    text-align: center;
+  }
+
+  .social a:link, a:visited, a:active {
+    margin: 0;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+  }
+
+  .social a:hover {
+    opacity: .7;
+  }
+
+  .twitter-title, .insta-title {
+    text-align: center;
+    height: 60px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .social-twitter {
+    height: 480px;
+    max-width: 330px;
+    border-radius: 2em;
+    border: 1em solid #f78b61;
+    background: #fff;
+    display: inline-block;
+    overflow: auto;
+  }
+
+  .social-insta {
+    height: 480px;
+    width: 400px;
+    padding: 0;
+    background: #fff;
+    border-radius: 2em;
+    text-align: center;
+    border: 1em solid #f78b61;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  iframe {
+    width: 100%;
+    border: 0;
+    height: 450px;
+  }
+
+  .footer {
+    background: #A7DBD8;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+
+  }
+
+    @font-face {
+    font-family: 'weather';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+      #weather {
+        margin: 0px auto;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #000;
+        background: #fff;
+        color: #524236;
+        border-radius: 4px;
+      }
+
+      i {
+        color: #fff;
+        font-family: weather;
+        font-size: 90px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.0;
+      }
+
+      .icon-0:before { content: ":"; }
+      .icon-1:before { content: "p"; }
+      .icon-2:before { content: "S"; }
+      .icon-3:before { content: "Q"; }
+      .icon-4:before { content: "S"; }
+      .icon-5:before { content: "W"; }
+      .icon-6:before { content: "W"; }
+      .icon-7:before { content: "W"; }
+      .icon-8:before { content: "W"; }
+      .icon-9:before { content: "I"; }
+      .icon-10:before { content: "W"; }
+      .icon-11:before { content: "I"; }
+      .icon-12:before { content: "I"; }
+      .icon-13:before { content: "I"; }
+      .icon-14:before { content: "I"; }
+      .icon-15:before { content: "W"; }
+      .icon-16:before { content: "I"; }
+      .icon-17:before { content: "W"; }
+      .icon-18:before { content: "U"; }
+      .icon-19:before { content: "Z"; }
+      .icon-20:before { content: "Z"; }
+      .icon-21:before { content: "Z"; }
+      .icon-22:before { content: "Z"; }
+      .icon-23:before { content: "Z"; }
+      .icon-24:before { content: "E"; }
+      .icon-25:before { content: "E"; }
+      .icon-26:before { content: "3"; }
+      .icon-27:before { content: "a"; }
+      .icon-28:before { content: "A"; }
+      .icon-29:before { content: "a"; }
+      .icon-30:before { content: "A"; }
+      .icon-31:before { content: "6"; }
+      .icon-32:before { content: "1"; }
+      .icon-33:before { content: "6"; }
+      .icon-34:before { content: "1"; }
+      .icon-35:before { content: "W"; }
+      .icon-36:before { content: "1"; }
+      .icon-37:before { content: "S"; }
+      .icon-38:before { content: "S"; }
+      .icon-39:before { content: "S"; }
+      .icon-40:before { content: "M"; }
+      .icon-41:before { content: "W"; }
+      .icon-42:before { content: "I"; }
+      .icon-43:before { content: "W"; }
+      .icon-44:before { content: "a"; }
+      .icon-45:before { content: "S"; }
+      .icon-46:before { content: "U"; }
+      .icon-47:before { content: "S"; }
+
+      #weather h2 {
+        margin: 0 0;
+        color: #524236;
+        font-size: 50px;
+        font-weight: 300;
+        text-align: center;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        background: #f78b61;
+        border-radius: 4px;
+      }
+
+      #weather ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      #weather li {
+        background: #000;
+        background: rgba(255,255,255,0.90);
+        display: inline-block;
+      }
+
+      #weather .currently {
+        margin: 0;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        border-bottom: solid 1px #000;
+        width: 99%;
+      }
+
+      #weather .temps {
+        width: auto;
+        padding-bottom: 2px;
+        padding-top: 2px;
+      }
+
+      #weather .left {
+        text-align: center;
+        display: inline-block;
+        padding-right: 3px;
+      }
+
+      #weather .right {
+        padding-left: 3px;
+        text-align: center;
+        display: inline-block;
+      }
